@@ -79,6 +79,5 @@ winget install $wingetArgs tailscale.tailscale
 winget install $wingetArgs Valve.Steam
 winget install $wingetArgs EpicGames.EpicGamesLauncher
 winget install $wingetArgs Discord.Discord
-winget install $wingetArgs Spotify.Spotify
 
 
