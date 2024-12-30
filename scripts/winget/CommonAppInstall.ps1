@@ -73,11 +73,9 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 #======================================================================
 # Install the program using the following command: `winget install $wingetArgs <app.id>`
 $wingetArgs = @("-e", "-h", "--accept-package-agreements", "--accept-source-agreements")
-winget install $wingetArgs Google.Chrome
-winget install $wingetArgs Git.Git
-winget install $wingetArgs tailscale.tailscale
-winget install $wingetArgs Valve.Steam
-winget install $wingetArgs EpicGames.EpicGamesLauncher
-winget install $wingetArgs Discord.Discord
-
+$softwareListPath = Join-Path -Path $PSScriptRoot -ChildPath "SoftwareList.json"
+$softwareList = Get-Content -Path $softwareListPath | ConvertFrom-Json
+foreach ($software in $softwareList.software) {
+    winget install $wingetArgs $software
+}
 

@@ -18,10 +18,6 @@ This sets the execution policy to `RemoteSigned`, which allows the execution of 
 
 ### 2. Running the Script
 
-After setting the execution policy, you can run the scripts provided in this repository. To execute a script, simply open a PowerShell window and navigate to the directory where the script is located. Then run:
+After setting the execution policy, you can run the scripts provided in this repository. To execute a script, navigate to the directory where the script is located, right-click on the script file, and select Run with PowerShell from the context menu.
 
-```powershell
-.\script_name.ps1
-```
-
-Replace `script_name.ps1` with the actual script file you want to execute.
+This will open a PowerShell window and execute the script.

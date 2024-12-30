@@ -1,0 +1,10 @@
+{
+    "software": [
+      "Google.Chrome",
+      "Git.Git",
+      "tailscale.tailscale",
+      "Valve.Steam",
+      "EpicGames.EpicGamesLauncher",
+      "Discord.Discord"
+    ]
+}
