@@ -1,5 +1,5 @@
 apt update && apt upgrade -y
-# Cuda
+# Cuda 12.8
 if nvcc --version > /dev/null 2>&1; then
     echo "Cuda already installed"
 else
